@@ -1,7 +1,7 @@
 #include <iostream>
-#include "practice/SecuencialStructures.h"
-#include "practice/ConditionalStructures.h"
-#include "practice/Loops.h"
+#include "exercises/SecuencialStructures.h"
+#include "exercises/ConditionalStructures.h"
+#include "exercises/Loops.h"
 
 int main() {
 //    SecuencialStructures secuenceStructures;
