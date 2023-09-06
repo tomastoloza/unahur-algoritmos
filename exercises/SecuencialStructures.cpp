@@ -2,7 +2,7 @@
 // Created by ttoloza on 09/08/2023.
 //
 
-#include "SecuencialStructures.h"
+#include "SequencialStructures.h"
 #include <iostream>
 #include <cmath>
 
@@ -10,7 +10,7 @@
 using namespace std;
 
 
-int SecuencialStructures::readInputNumber() {
+int SequencialStructures::readInputNumber() {
     int number;
     cout << "Please enter an integer value: ";
     cin >> number;
@@ -23,7 +23,7 @@ int SecuencialStructures::readInputNumber() {
 //- La resta (el primero menos el segundo)
 //- La multiplicación
 //- La división
-int SecuencialStructures::allFourArithmeticOperationsFromInput() {
+int SequencialStructures::allFourArithmeticOperationsFromInput() {
     int numberA;
     int numberB;
 
@@ -41,7 +41,7 @@ int SecuencialStructures::allFourArithmeticOperationsFromInput() {
 }
 
 // 3) Escribir un programa que lea el nombre de una persona y luego lo salude.
-int SecuencialStructures::sayHello() {
+int SequencialStructures::sayHello() {
     string name;
     cout << "Please enter your name: ";
     getline(cin, name);
@@ -51,7 +51,7 @@ int SecuencialStructures::sayHello() {
 
 // 4) Dado el radio R de una esfera que se solicita por teclado, calcular e imprimir su
 // superficie y su volumen.
-int SecuencialStructures::getSurfaceAndVolumeFromSphere() {
+int SequencialStructures::getSurfaceAndVolumeFromSphere() {
     double radius;
     cout << "Please enter radius: ";
     cin >> radius;
@@ -64,7 +64,7 @@ int SecuencialStructures::getSurfaceAndVolumeFromSphere() {
 }
 
 // 5) Leer la base y la altura de un rectángulo, calcular el perímetro y la superficie.
-int SecuencialStructures::getPerimeterAndSurfaceFromRectangle() {
+int SequencialStructures::getPerimeterAndSurfaceFromRectangle() {
     double length;
     double height;
     cout << "Please enter length: ";

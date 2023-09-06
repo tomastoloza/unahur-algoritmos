@@ -2,10 +2,10 @@
 // Created by ttoloza on 09/08/2023.
 //
 
-#ifndef UNAHUR_ALGORITMOS_SECUENCIALSTRUCTURES_H
-#define UNAHUR_ALGORITMOS_SECUENCIALSTRUCTURES_H
+#ifndef UNAHUR_ALGORITMOS_SEQUENCIALSTRUCTURES_H
+#define UNAHUR_ALGORITMOS_SEQUENCIALSTRUCTURES_H
 
-class SecuencialStructures {
+class SequencialStructures {
 public:
     int readInputNumber();
 
@@ -19,4 +19,4 @@ public:
 };
 
 
-#endif //UNAHUR_ALGORITMOS_SECUENCIALSTRUCTURES_H
+#endif //UNAHUR_ALGORITMOS_SEQUENCIALSTRUCTURES_H

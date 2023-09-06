@@ -1,15 +1,17 @@
 #include <iostream>
-#include "exercises/SecuencialStructures.h"
+#include "exercises/SequencialStructures.h"
 #include "exercises/ConditionalStructures.h"
 #include "exercises/Loops.h"
+#include "exercises/Functions.h"
+#include "exercises/VectorsAndMatrices.h"
 
 int main() {
-//    SecuencialStructures secuenceStructures;
-//    secuenceStructures.readInputNumber();
-//    secuenceStructures.allFourArithmeticOperationsFromInput();
-//    secuenceStructures.sayHello();
-//    secuenceStructures.getSurfaceAndVolumeFromSphere();
-//    secuenceStructures.getPerimeterAndSurfaceFromRectangle();
+//    SequencialStructures sequencialStructures;
+//    sequencialStructures.readInputNumber();
+//    sequencialStructures.allFourArithmeticOperationsFromInput();
+//    sequencialStructures.sayHello();
+//    sequencialStructures.getSurfaceAndVolumeFromSphere();
+//    sequencialStructures.getPerimeterAndSurfaceFromRectangle();
 
 //    ConditionalStructures conditionalStructures;
 //    conditionalStructures.isGreaterLowerOrEqualThanZero();
@@ -20,7 +22,7 @@ int main() {
 //    conditionalStructures.interactiveMenu();
 //    conditionalStructures.secondsToDaysHoursMinutesSeconds();
 
-    Loops l;
+//    Loops l;
 //    l.nextTwentyNumbers();
 //    l.getFactorial();
 //    l.partialSum();
@@ -31,6 +33,21 @@ int main() {
 //    l.getMaxAndMinPay();
 //    l.isSortedOrReverseSorted();
 //    l.getTableFahrenheitToCelcius();
-    l.getMedium();
+//    l.getMedium();
+
+    Functions f;
+//    f.printRoots();
+//    f.printIsPrime();
+//    f.printLCM();
+//    f.printGCD();
+
+    VectorsAndMatrices vnm;
+//    vnm.printPrimeNumbersFrom2to200();
+//    vnm.printVectorSum();
+//    vnm.printDotProduct();
+//    vnm.printStudentsThatTookExamAndPercentagesPerNotes();
+//    vnm.printStudentPerTest
+//    vnm.printSetFromVector();
+//    vnm.printPolynomialSpecialization();
     return 0;
 }
