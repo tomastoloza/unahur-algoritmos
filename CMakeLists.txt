@@ -18,4 +18,13 @@ add_executable(unahur_algoritmos main.cpp
         exercises/commonMultiple/CommonMultiple.cpp
         exercises/VectorsAndMatrices.h
         exercises/VectorsAndMatrix.cpp
-        exercises/pointerDrawings/ej1.h)
+        exercises/pointerDrawings/ej1.h
+        exercises/recordsAndTables/Person.h
+        exercises/recordsAndTables/Person.cpp
+        exercises/recordsAndTables/Agenda.h
+        exercises/recordsAndTables/Agenda.cpp
+        exercises/recordsAndTables/Product.h
+        exercises/recordsAndTables/Product.h
+        exercises/recordsAndTables/Product.cpp
+        exercises/recordsAndTables/Gondola.h
+        exercises/recordsAndTables/Gondola.cpp)
