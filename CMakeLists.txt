@@ -17,4 +17,5 @@ add_executable(unahur_algoritmos main.cpp
         exercises/commonMultiple/CommonMultiple.h
         exercises/commonMultiple/CommonMultiple.cpp
         exercises/VectorsAndMatrices.h
-        exercises/VectorsAndMatrix.cpp)
+        exercises/VectorsAndMatrix.cpp
+        exercises/pointerDrawings/ej1.h)

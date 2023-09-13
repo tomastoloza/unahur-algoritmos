@@ -1,6 +1,5 @@
-//
-// Created by ttoloza on 05/09/2023.
-//
+
+
 
 #include "VectorsAndMatrices.h"
 #include "Functions.h"
@@ -166,3 +165,192 @@ void VectorsAndMatrices::printStudentsThatTookExamAndPercentagesPerNotes() {
         cout << "Percentage of students with grade " << i << ": " << percentage << "%" << endl;
     }
 }
+
+void VectorsAndMatrices::getMatrixSum() {
+    const int MAX_ROWS = 100;
+    const int MAX_COLS = 100;
+    int rows, cols;
+
+    cout << "Enter the number of rows: ";
+    cin >> rows;
+    cout << "Enter the number of columns: ";
+    cin >> cols;
+
+
+    int A[MAX_ROWS][MAX_COLS];
+    int B[MAX_ROWS][MAX_COLS];
+    int C[MAX_ROWS][MAX_COLS];
+
+
+    cout << "Enter the elements of matrix A:" << endl;
+    for (int i = 0; i < rows; ++i) {
+        for (int j = 0; j < cols; ++j) {
+            cin >> A[i][j];
+        }
+    }
+
+    cout << "Enter the elements of matrix B:" << endl;
+    for (int i = 0; i < rows; ++i) {
+        for (int j = 0; j < cols; ++j) {
+            cin >> B[i][j];
+        }
+    }
+
+
+    for (int i = 0; i < rows; ++i) {
+        for (int j = 0; j < cols; ++j) {
+            C[i][j] = A[i][j] + B[i][j];
+        }
+    }
+
+
+    cout << "Matrix C (result of the addition of A and B):" << endl;
+    for (int i = 0; i < rows; ++i) {
+        for (int j = 0; j < cols; ++j) {
+            cout << C[i][j] << " ";
+        }
+        cout << endl;
+    }
+}
+
+void VectorsAndMatrices::getSumByRow() {
+    const int MAX_ROWS = 100;
+    const int MAX_COLS = 100;
+    int rows, cols;
+
+    cout << "Ingrese el número de filas: ";
+    cin >> rows;
+    cout << "Ingrese el número de columnas: ";
+    cin >> cols;
+
+    int matrix[MAX_ROWS][MAX_COLS];
+
+    cout << "Ingrese los elementos de la matriz:" << endl;
+    for (int i = 0; i < rows; ++i) {
+        for (int j = 0; j < cols; ++j) {
+            cin >> matrix[i][j];
+        }
+    }
+
+    vector<int> rowSums;
+    for (int i = 0; i < rows; ++i) {
+        int sum = 0;
+        for (int j = 0; j < cols; ++j) {
+            sum += matrix[i][j];
+        }
+        rowSums.push_back(sum);
+    }
+
+    cout << "Vector de sumas de filas:" << endl;
+    for (int i = 0; i < rows; ++i) {
+        cout << "Fila " << i + 1 << ": " << rowSums[i] << endl;
+    }
+
+}
+
+void VectorsAndMatrices::getDiagonalSum() {
+
+    const int MAX_SIZE = 100;
+    int size;
+
+
+    cout << "Enter the size of the square matrix: ";
+    cin >> size;
+
+
+    int matrix[MAX_SIZE][MAX_SIZE];
+
+    cout << "Enter the elements of the square matrix:" << endl;
+    for (int i = 0; i < size; ++i) {
+        for (int j = 0; j < size; ++j) {
+            cin >> matrix[i][j];
+        }
+    }
+
+    int trace = 0;
+    for (int i = 0; i < size; ++i) {
+        trace += matrix[i][i];
+    }
+    cout << "Trace of the matrix: " << trace << endl;
+
+}
+
+void VectorsAndMatrices::getIdentityMatrix() {
+
+    const int MAX_SIZE = 100;
+    int n;
+
+    cout << "Enter the dimension of the square matrix: ";
+    cin >> n;
+
+    int matrix[MAX_SIZE][MAX_SIZE];
+
+    cout << "Enter the elements of the square matrix:" << endl;
+    for (int i = 0; i < n; ++i) {
+        for (int j = 0; j < n; ++j) {
+            cin >> matrix[i][j];
+        }
+    }
+
+    bool isIdentity = true;
+    for (int i = 0; i < n; ++i) {
+        for (int j = 0; j < n; ++j) {
+            if (i == j && matrix[i][j] != 1) {
+                isIdentity = false;
+                break;
+            } else if (i != j && matrix[i][j] != 0) {
+                isIdentity = false;
+                break;
+            }
+        }
+        if (!isIdentity) {
+            break;
+        }
+    }
+
+    if (isIdentity) {
+        cout << "The matrix is the identity matrix." << endl;
+    } else {
+        cout << "The matrix is not the identity matrix." << endl;
+    }
+
+}
+
+void VectorsAndMatrices::getVectorFromMinValuePerRow() {
+
+    const int MAX_ROWS = 100;
+    const int MAX_COLS = 100;
+
+    int rows, cols;
+
+    cout << "Enter the number of rows: ";
+    cin >> rows;
+    cout << "Enter the number of columns: ";
+    cin >> cols;
+
+    int matrix[MAX_ROWS][MAX_COLS];
+
+    cout << "Enter the elements of the matrix:" << endl;
+    for (int i = 0; i < rows; ++i) {
+        for (int j = 0; j < cols; ++j) {
+            cin >> matrix[i][j];
+        }
+    }
+
+    vector<int> rowMinima;
+    for (int i = 0; i < rows; ++i) {
+        int min = matrix[i][0];
+        for (int j = 1; j < cols; ++j) {
+            if (matrix[i][j] < min) {
+                min = matrix[i][j];
+            }
+        }
+        rowMinima.push_back(min);
+    }
+
+    cout << "Vector of minimum values in each row:" << endl;
+    for (int i = 0; i < rows; ++i) {
+        cout << "Row " << i + 1 << ": " << rowMinima[i] << endl;
+    }
+}
+
