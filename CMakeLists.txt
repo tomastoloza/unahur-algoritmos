@@ -27,4 +27,8 @@ add_executable(unahur_algoritmos main.cpp
         exercises/recordsAndTables/Product.h
         exercises/recordsAndTables/Product.cpp
         exercises/recordsAndTables/Gondola.h
-        exercises/recordsAndTables/Gondola.cpp)
+        exercises/recordsAndTables/Gondola.cpp
+        exercises/algorithmComplexity/NodeInt.h
+        exercises/algorithmComplexity/ListaInt.h
+        exercises/algorithmComplexity/ListaInt.cpp
+        exercises/algorithmComplexity/NodoInt.cpp)
