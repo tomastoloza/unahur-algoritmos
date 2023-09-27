@@ -31,4 +31,5 @@ add_executable(unahur_algoritmos main.cpp
         exercises/algorithmComplexity/NodeInt.h
         exercises/algorithmComplexity/ListaInt.h
         exercises/algorithmComplexity/ListaInt.cpp
-        exercises/algorithmComplexity/NodoInt.cpp)
+        exercises/algorithmComplexity/NodoInt.cpp
+        exercises/list/List.cpp)

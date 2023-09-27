@@ -20,7 +20,7 @@ int SequencialStructures::readInputNumber() {
 
 // 2) Leer dos números por teclado e imprimir:
 //- La suma de ambos
-//- La resta (el primero menos el segundo)
+//- La resta (el first menos el segundo)
 //- La multiplicación
 //- La división
 int SequencialStructures::allFourArithmeticOperationsFromInput() {

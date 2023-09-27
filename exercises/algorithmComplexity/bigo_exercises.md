@@ -53,7 +53,7 @@ while (i<10) {
     i++;
 }
 ```
-n^2
+O(n^2)
 
 5) Desarrollar un algoritmo para calcular el promedio de un vector de n elementos.
    Calcular luego, su tiempo de ejecución.
